@@ -9,29 +9,19 @@
   <style>
     body {
       font-family: "Arial", sans-serif;
-      line-height: 1.5;
+      line-height: 1.4;
       color: #333;
-      /* Light gray background to make the box stand out */
-      background-color: #f4f4f5;
+      background-color: #ffffff;
       margin: 0;
-      /* Padding around the main box */
       padding: 20px;
     }
 
-    /* The container is now styled as a "box" or "card" */
     .container {
       max-width: 700px;
-      margin: 30px auto;
-      /* White background and internal padding for the card */
-      background-color: #ffffff;
-      padding: 30px 40px;
-      /* Subtle border, rounded corners, and shadow */
-      border: 1px solid #e0e0e0;
-      border-radius: 8px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      margin: 20px auto;
+      padding: 0;
     }
 
-    /* General style for ALL links within the container */
     .container a {
       text-decoration: none;
       color: #0056b3;
@@ -43,34 +33,43 @@
     }
 
     header {
-      text-align: center;
-      margin-bottom: 40px;
+      text-align: left;
+      margin-bottom: 30px;
     }
 
     h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
+      font-size: 1.8rem;
+      margin-bottom: 0.25rem;
       color: #111;
     }
 
+    /* ADDED: Style for the new email address */
+    .email-address {
+      font-size: 0.9rem;
+      color: #555;
+      margin: 4px 0 0 0;
+      /* Add a little space above, but none below */
+    }
+
     .links {
-      margin-top: 0.5rem;
+      margin-top: 0.75rem;
+      /* Increased top margin to create space below the email */
       display: flex;
       flex-wrap: wrap;
-      justify-content: center;
+      justify-content: flex-start;
       gap: 4px 12px;
     }
 
     section {
-      margin-bottom: 30px;
+      margin-bottom: 25px;
     }
 
     h2 {
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       color: #222;
       border-bottom: 1px solid #e0e0e0;
-      padding-bottom: 8px;
-      margin-bottom: 20px;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
     }
 
     #about p {
@@ -83,21 +82,21 @@
     }
 
     .publications-list li {
-      margin-bottom: 1.5rem;
+      margin-bottom: 1.2rem;
     }
 
     .publications-list li>* {
-      margin: 2px 0;
+      margin: 1px 0;
     }
 
     .publications-list .title {
       font-weight: bold;
-      font-size: 1.05rem;
+      font-size: 1rem;
       color: #111;
     }
 
     .publications-list .authors {
-      font-size: 0.95rem;
+      font-size: 0.9rem;
       color: #555;
     }
 
@@ -138,22 +137,19 @@
 
     @media (max-width: 600px) {
       body {
-        padding: 10px;
-        /* Less padding on the outside for mobile */
+        padding: 15px;
       }
 
       .container {
-        padding: 25px 20px;
-        /* Less padding inside the box for mobile */
         margin: 10px auto;
       }
 
       h1 {
-        font-size: 1.8rem;
+        font-size: 1.6rem;
       }
 
       h2 {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
       }
 
       .publications-list .meta {
@@ -179,8 +175,10 @@
 
     <header>
       <h1>Xingyu Xiang</h1>
+      <!-- ADDED: Email address text -->
+      <p class="email-address">xyxiang at g dot harvard dot edu</p>
       <div class="links">
-        <a href="mailto:xyxiang@g.harvard.edu">[Email]</a>
+        <!-- REMOVED: The [Email] link -->
         <a href="https://scholar.google.com/citations?user=FNnSwscAAAAJ">[Google Scholar]</a>
         <a href="https://github.com/xyxiang7">[GitHub]</a>
         <a href="https://www.linkedin.com/in/xingyu-xiang-78b00523b/">[LinkedIn]</a>
@@ -208,7 +206,8 @@
         <ul class="publications-list">
           <li>
             <p class="title">ShadowServe: Interference-Free KV Cache Fetching for Distributed Prefix Caching</p>
-            <div class="authors">Xingyu Xiang, Raj Joshi, Yuhan Liu, Jiayi Yao, Chenxingyu Zhao, Junchen Jiang, Yang Zhou, Eddie Kohler, and Minlan Yu</div>
+            <div class="authors">Xingyu Xiang, Raj Joshi, Yuhan Liu, Jiayi Yao, Chenxingyu Zhao, Junchen Jiang, Yang
+              Zhou, Eddie Kohler, and Minlan Yu</div>
             <div class="meta">
               <span class="venue">Preprint</span>
               <span class="pub-links">
