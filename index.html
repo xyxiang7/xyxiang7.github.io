@@ -1,261 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta name="google-site-verification" content="bDY1FuoubMmadQ_M3GI_tuPyqKteOUAVLTJ-8NJMCJ8" />
+  <meta name="google-site-verification" content="bDY1FuoubMmadQ_M3GI_tuPyqKteOUAVLTJ-8NJMCJ8">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Xingyu Xiang</title>
   <style>
+    :root{
+      --text: #111;
+      --muted: #555;
+      --link: #0b57d0;
+      --bg: #fff;
+    }
+  
     body {
-      font-family: "Arial", sans-serif;
-      line-height: 1.4;
-      color: #333;
-      background-color: #ffffff;
-      margin: 0;
-      padding: 20px;
-    }
-
-    .container {
       max-width: 700px;
-      margin: 20px auto;
-      padding: 0;
+      margin: 28px auto;
+      padding: 0 16px;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      font-size: 15.5px;
+      color: var(--text);
+      background: var(--bg);
     }
-
-    .container a {
-      text-decoration: none;
-      color: #0056b3;
-      font-weight: 500;
-    }
-
-    .container a:hover {
-      text-decoration: underline;
-    }
-
-    header {
-      text-align: left;
-      margin-bottom: 30px;
-    }
-
+  
     h1 {
-      font-size: 1.6rem;
-      margin-bottom: 0.25rem;
-      color: #111;
+      font-size: 26px;
+      margin: 4px 0 6px 0;
+      line-height: 1.2;
+      letter-spacing: -0.2px;
     }
-
-    /* ADDED: Style for the new email address */
-    .email-address {
-      font-size: 0.9rem;
-      color: #555;
-      margin: 4px 0 0 0;
-      /* Add a little space above, but none below */
-    }
-
-    .links {
-      font-size: 0.9rem;
-      margin-top: 0.5rem;
-      /* Increased top margin to create space below the email */
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      gap: 4px 12px;
-    }
-
-    section {
-      margin-bottom: 25px;
-    }
-
+  
     h2 {
-      font-size: 1.3rem;
-      color: #222;
-      border-bottom: 1px solid #e0e0e0;
-      padding-bottom: 5px;
-      margin-bottom: 15px;
+      font-size: 18px;
+      margin: 22px 0 10px 0;
+      line-height: 1.25;
     }
-
-    #about p {
-      margin-top: 0;
+  
+    p { margin: 10px 0; }
+  
+    ul { margin: 10px 0 0 0; padding-left: 20px; }
+  
+    li { margin: 14px 0; }
+  
+    a {
+      color: var(--link);
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 2px;
     }
-
-    .publications-list {
-      list-style-type: none;
-      padding-left: 0;
-    }
-
-    .publications-list li {
-      margin-bottom: 1.2rem;
-    }
-
-    .publications-list li>* {
-      margin: 1px 0;
-    }
-
-    .publications-list .title {
-      font-weight: bold;
-      font-size: 1rem;
-      color: #111;
-    }
-
-    .publications-list .authors {
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    .publications-list .meta {
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      flex-wrap: wrap;
-      font-size: 0.9rem;
-    }
-
-    .publications-list .venue {
-      font-style: italic;
-      color: #666;
-      margin-right: 15px;
-    }
-
-    .publications-list .pub-links a {
-      margin-left: 12px;
-      white-space: nowrap;
-    }
-
-    .note {
-      font-size: 0.9em;
-      color: #666;
-      margin-top: 10px;
-    }
-
-    .service-list {
-      list-style-type: disc;
-      padding-left: 20px;
-      margin-top: 0;
-    }
-
-    .service-list li {
-      margin-bottom: 5px;
-    }
-
-    @media (max-width: 600px) {
-      body {
-        padding: 15px;
-      }
-
-      .container {
-        margin: 10px auto;
-      }
-
-      h1 {
-        font-size: 1.6rem;
-      }
-
-      h2 {
-        font-size: 1.2rem;
-      }
-
-      .publications-list .meta {
-        flex-direction: column;
-        align-items: flex-start;
-      }
-
-      .publications-list .pub-links {
-        margin-top: 4px;
-      }
-
-      .publications-list .pub-links a {
-        margin-left: 0;
-        margin-right: 12px;
-      }
-    }
+  
+    a:hover { text-decoration-thickness: 2px; }
+  
+    /* subtle polish */
+    body > p:first-of-type { color: var(--muted); }
+    em { color: var(--muted); }
   </style>
 </head>
-
 <body>
 
-  <div class="container">
+  <h1>Xingyu Xiang</h1>
 
-    <header>
-      <h1>Xingyu Xiang</h1>
-      <!-- ADDED: Email address text -->
-      <p class="email-address">xyxiang at g dot harvard dot edu</p>
-      <div class="links">
-        <!-- REMOVED: The [Email] link -->
-        <a href="https://scholar.google.com/citations?user=FNnSwscAAAAJ">[Google Scholar]</a>
-        <a href="https://github.com/xyxiang7">[GitHub]</a>
-        <a href="https://www.linkedin.com/in/xingyu-xiang-78b00523b/">[LinkedIn]</a>
-      </div>
-    </header>
+  <p>
+    <a href="https://scholar.google.com/citations?user=FNnSwscAAAAJ">Google Scholar</a> ·
+    <a href="https://github.com/xyxiang7">GitHub</a> ·
+    <a href="https://www.linkedin.com/in/xingyu-xiang-78b00523b/">LinkedIn</a>
+  </p>
 
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          I am a second-year Ph.D. student in Computer Science at the <a href="https://seas.harvard.edu/">School of
-            Engineering and Applied Sciences</a>, Harvard University, where I am advised by <a
-            href="https://minlanyu.seas.harvard.edu/index.html">Minlan Yu</a> and <a
-            href="https://www.read.seas.harvard.edu/~kohler/">Eddie Kohler</a>. Prior to Harvard, I got my Bachelor's
-          degree in Computer Science from <a href="https://english.pku.edu.cn/">Peking University</a>.
-          <br><br>
-          My research involves designing and building efficient, reliable, and extensible distributed software systems.
-          I am interested in the full software stack, from the operating system to high-level infrastructure that powers
-          emerging AI applications.
-        </p>
-      </section>
+  <h2>About Me</h2>
+  <p>
+    I am a second-year Ph.D. student in Computer Science at the <a href="https://seas.harvard.edu/">School of Engineering and Applied Sciences</a>, Harvard University, where I am advised by <a href="https://minlanyu.seas.harvard.edu/index.html">Minlan Yu</a> and <a href="https://www.read.seas.harvard.edu/~kohler/">Eddie Kohler</a>. Prior to Harvard, I got my Bachelor's degree in Computer Science from <a href="https://english.pku.edu.cn/">Peking University</a>.
+  </p>
+  <p>
+    My research involves designing and building efficient, reliable, and extensible distributed software systems. I am interested in the full software stack, from the operating system to high-level infrastructure that powers emerging AI applications.
+  </p>
 
-      <section id="publications">
-        <h2>Publications</h2>
-        <ul class="publications-list">
-          <li>
-            <p class="title">ShadowServe: Interference-Free KV Cache Fetching for Distributed Prefix Caching</p>
-            <div class="authors">Xingyu Xiang, Raj Joshi, Yuhan Liu, Jiayi Yao, Chenxingyu Zhao, Junchen Jiang, Yang
-              Zhou, Eddie Kohler, and Minlan Yu</div>
-            <div class="meta">
-              <span class="venue">Preprint</span>
-              <span class="pub-links">
-                <a href="https://arxiv.org/abs/2509.16857">[arxiv]</a>
-              </span>
-            </div>
-          </li>
-          <li>
-            <p class="title">DINT: Fast In-Kernel Distributed Transactions with eBPF</p>
-            <div class="authors">Yang Zhou*, Xingyu Xiang*, Matthew Kiley, Sowmya Dharanipragada, and Minlan Yu</div>
-            <div class="meta">
-              <span class="venue">USENIX NSDI 2024</span>
-              <span class="pub-links">
-                <a href="files/dint-nsdi24.pdf">[Paper]</a>
-                <a href="files/dint-nsdi24-slides.pdf">[Slides]</a>
-                <a href="https://github.com/DINT-NSDI24/DINT">[Code]</a>
-              </span>
-            </div>
-          </li>
-          <li>
-            <p class="title">Ditto: Efficient Serverless Analytics with Elastic Parallelism</p>
-            <div class="authors">Chao Jin, Zili Zhang, Xingyu Xiang, Songyun Zou, Gang Huang, Xuanzhe Liu, and Xin Jin
-            </div>
-            <div class="meta">
-              <span class="venue">ACM SIGCOMM 2023</span>
-              <span class="pub-links">
-                <a href="files/ditto-sigcomm23.pdf">[Paper]</a>
-                <a href="files/ditto-sigcomm23-slides.pdf">[Slides]</a>
-                <a href="https://github.com/chaojin0310/Ditto">[Code]</a>
-              </span>
-            </div>
-          </li>
-        </ul>
+  <h2>Contact</h2>
+  <p>
+    xyxiang at g dot harvard dot edu
+  </p>
 
-        <p class="note">* Equal contribution.</p>
-      </section>
+  <h2>Publications</h2>
+  <ul>
+    <li>
+      <strong>ShadowServe: Interference-Free KV Cache Fetching for Distributed Prefix Caching</strong><br>
+      Xingyu Xiang, Raj Joshi, Yuhan Liu, Jiayi Yao, Chenxingyu Zhao, Junchen Jiang, Yang Zhou, Eddie Kohler, and Minlan Yu<br>
+      <em>Preprint</em><br>
+      <a href="https://arxiv.org/abs/2509.16857">Paper</a>
+    </li>
+    <li>
+      <strong>DINT: Fast In-Kernel Distributed Transactions with eBPF</strong><br>
+      Yang Zhou*, Xingyu Xiang*, Matthew Kiley, Sowmya Dharanipragada, and Minlan Yu<br>
+      <em>USENIX NSDI 2024</em><br>
+      <a href="files/dint-nsdi24.pdf">Paper</a> ·
+      <a href="files/dint-nsdi24-slides.pdf">Slides</a> ·
+      <a href="https://github.com/DINT-NSDI24/DINT">Code</a>
+    </li>
+    <li>
+      <strong>Ditto: Efficient Serverless Analytics with Elastic Parallelism</strong><br>
+      Chao Jin, Zili Zhang, Xingyu Xiang, Songyun Zou, Gang Huang, Xuanzhe Liu, and Xin Jin<br>
+      <em>ACM SIGCOMM 2023</em><br>
+      <a href="files/ditto-sigcomm23.pdf">Paper</a> ·
+      <a href="files/ditto-sigcomm23-slides.pdf">Slides</a> ·
+      <a href="https://github.com/chaojin0310/Ditto">Code</a>
+    </li>
+  </ul>
+  <p>* Equal contribution.</p>
 
-      <section id="service">
-        <h2>Service</h2>
-        <ul class="service-list">
-          <li>Artifact Evaluation Committee: USENIX OSDI/ATC 2025</li>
-        </ul>
-      </section>
-    </main>
-
-  </div>
+  <h2>Service</h2>
+  <ul>
+    <li>Artifact Evaluation Committee: USENIX OSDI/ATC 2025</li>
+  </ul>
 
 </body>
-
 </html>
